@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Anime</title>
+    <link rel="icon" href="../img/icono.jpg" type="image/x-icon" />
+    <!-- Agrega el enlace al icono -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <button id="btn-back">Regresar</button>
+      </a>
+      <h1>Anime Latino</h1>
+    </header>
+
+    <div id="movie-info">
+      <img
+        src="../../images/bluelock/bluelock.jpg"
+        alt="Portada de la Película"
+      />
+      <p>Nombre: Blue Lock</p>
+      <p>Tipo: Serie</p>
+      <p>Año: 2017</p>
+      <p>Género: Acción, Fantasía, Escolar</p>
+      <p>Resolución: 1920×1080</p>
+      <p>Duración por Episodio: 30 minutos</p>
+      <p>Audios: Español Latino</p>
+      <p>Peso por Episodio: 100MB - 200MB</p>
+      <p>Calidad: 1080P</p>
+      <p>Servidor: Mediafire</p>
+      <div>
+        <p>
+          Para reformar la selección nacional japonesa, la asociación nacional
+          de fútbol contrata al excéntrico experto en deportes Jinpachi Ego para
+          que analice dónde están los problemas del equipo. Su evaluación revela
+          que lo que más necesita el equipo es un delantero decidido que ignore
+          todo lo demás y sólo piense en meter el balón en la portería. Para
+          encontrar a la persona adecuada para el trabajo, Jinpachi hace
+          construir un campo de entrenamiento similar a una prisión llamado
+          “Blue Lock”.
+        </p>
+      </div>
+
+      <h1>Capturas del anime</h1>
+      <div id="capturas-container">
+        <img src="../img/capturas/bluelock/4.jpg" alt="" />
+        <img src="../img/capturas/bluelock/1.jpg" alt="" />
+        <img src="../img/capturas/bluelock/3.jpg" alt="" />
+        <img src="../img/capturas/bluelock/4.jpg" alt="" />
+      </div>
+
+      <!-- Lista de Episodios -->
+      <h2>Descargar Episodios</h2>
+      <div id="marca">
+        <img src="../img/capturas/marcas.jpg" alt="Servicios" />
+      </div>
+      <div id="episodios">
+        <ul>
+          <li class="temporada">
+            <span class="temporada-nombre">Temporada 1 en Español Latino</span>
+            <ul class="episodios-temporada">
+              <!-- Temporada 2 -->
+              <li><a href="https://cuty.io/Bluel01">Episodio 1</a></li>
+              <li><a href="https://cuty.io/Bluel02">Episodio 2</a></li>
+              <li><a href="https://cuty.io/Bluel03">Episodio 3</a></li>
+              <li><a href="https://cuty.io/Bluel04">Episodio 4</a></li>
+              <li><a href="https://cuty.io/Bluel05">Episodio 5</a></li>
+              <li><a href="https://cuty.io/Bluel06">Episodio 6</a></li>
+              <li><a href="https://cuty.io/Bluel07">Episodio 7</a></li>
+              <li><a href="https://cuty.io/Bluel08">Episodio 8</a></li>
+              <li><a href="https://cuty.io/Bluel09">Episodio 9</a></li>
+              <li><a href="https://cuty.io/Bluel10">Episodio 10</a></li>
+              <li><a href="https://cuty.io/Bluel11">Episodio 11</a></li>
+              <li><a href="https://cuty.io/Bluel12">Episodio 12</a></li>
+              <li><a href="https://cuty.io/Bluel013">Episodio 13</a></li>
+              <li><a href="https://cuty.io/Bluel14">Episodio 14</a></li>
+              <li><a href="https://cuty.io/Bluel15">Episodio 15</a></li>
+              <li><a href="https://cuty.io/Bluel16">Episodio 16</a></li>
+              <li><a href="https://cuty.io/Bluel17">Episodio 17</a></li>
+              <li><a href="https://cuty.io/Bluel18">Episodio 18</a></li>
+              <li><a href="https://cuty.io/Bluel19">Episodio 19</a></li>
+              <li><a href="https://cuty.io/Bluel20">Episodio 20</a></li>
+              <li><a href="https://cuty.io/Bluel21">Episodio 21</a></li>
+              <li><a href="https://cuty.io/Bluel22">Episodio 22</a></li>
+              <li><a href="https://cuty.io/Bluel23">Episodio 23</a></li>
+              <li><a href="https://cuty.io/Bluel24">Episodio 24 - Final</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const temporadas = document.querySelectorAll(".temporada");
+
+        temporadas.forEach((temporada) => {
+          temporada.addEventListener("click", function () {
+            this.querySelector(".episodios-temporada").classList.toggle(
+              "mostrar"
+            );
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <a
+        href="#"
+        >Facebook</a
+      >
+      <a href="#"
+        >TikTok</a
+      >
+      <a href="#">YouTube</a>
+    </footer>
+  </body>
+</html>

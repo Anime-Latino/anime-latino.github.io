@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Edad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.7); /* Color de fondo oscuro */
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Color de fondo del contenido */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: orange; /* Color naranja para el título */
+        }
+
+        button {
+            background-color: orange; /* Color naranja para el botón */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button.salir {
+            background-color: black; /* Color negro para el botón de "Salir" */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Verificación de Edad</h1>
+        <p>Este sitio web contiene material restringido a menores de edad, que incluye desnudez y representaciones explícitas de actividad sexual. Al entrar, afirma que tiene por lo menos 18 años de edad o la mayoría de edad en la jurisdicción desde que está accediendo el sitio web y que da consentimiento en ver contenido sexualmente explícito.</p>
+        <p>Seleccione una opción:</p>
+        <button onclick="entrar()">Tengo 18 años o más - Entrar</button>
+        <button class="salir" onclick="salir()">Soy menor de 18 años - Salir</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

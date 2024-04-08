@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Anime</title>
+    <link rel="icon" href="../img/icono.jpg" type="image/x-icon" />
+    <!-- Agrega el enlace al icono -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <button id="btn-back">Regresar</button>
+      </a>
+      <h1>Anime Latino</h1>
+    </header>
+
+    <div id="movie-info">
+      <img src="../../images/jujutsukaisen/jujutsut0.jpg" alt="Portada de la Anime" />
+      <p>Nombre: Jujutsu Kaisen 0 - La Pelicula</p>
+      <p>Tipo: Pelicula</p>
+      <p>Estudio: Mappa</p>
+      <p>Año: 2021</p>
+      <p>Género: Acción, Fantasía, Escolar</p>
+      <p>Resolución: 1920×1080</p>
+      <p>Duración: 95 minutos</p>
+      <p>Audios: Español Latino</p>
+      <p>Peso por Episodio: 1.2 GB</p>
+      <p>Calidad: 360p - 720p - 1080p HD</p>
+      <p>Servidor: Drive</p>
+      <p>
+        Descripción: Violentas desgracias ocurren con frecuencia en torno a
+        Yuuta Okkotsu, de 16 años, una tímida víctima del acoso escolar en el
+        instituto. Yuuta es portador de una monstruosa maldición, un poder que
+        se venga brutalmente de sus acosadores. Rika Orimoto, la maldición de
+        Yuuta, es una sombra de su trágica infancia y una amenaza potencialmente
+        letal para cualquiera que se atreva a hacerle daño.
+      </p>
+
+      <h1>Capturas del anime</h1>
+      <div id="capturas-container">
+        <img src="../img/capturas/jujutsukaisen/temp0/5.jpg" alt="" />
+        <img src="../img/capturas/jujutsukaisen/temp0/6.jpg" alt="" />
+        <img src="../img/capturas/jujutsukaisen/temp0/7.jpg" alt="" />
+        <img src="../img/capturas/jujutsukaisen/temp0/8.jpg" alt="" />
+      </div>
+
+      <!-- Lista de Pelicula -->
+      <h2>Descargar Pelicula</h2>
+      <div id="marca">
+        <img src="../img/capturas/marcas.jpg" alt="Servicios" />
+      </div>
+      <div id="episodios">
+        <ul>
+          <!-- Temporada 3 -->
+          <li class="temporada">
+            <span class="temporada-nombre">Pelicula en Español Latino</span>
+            <ul class="episodios-temporada">
+              <li>
+                <a href="https://cuty.io/JJK00"
+                  >Pelicula - Jujutsu Kaisen O
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="temporada">
+            <span class="temporada-nombre">Pelicula en Japones</span>
+            <ul class="episodios-temporada">
+              <li>
+                <a href="https://cuty.io/JJK0J"
+                  >Pelicula - Jujutsu Kaisen O
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const temporadas = document.querySelectorAll(".temporada");
+
+        temporadas.forEach((temporada) => {
+          temporada.addEventListener("click", function () {
+            this.querySelector(".episodios-temporada").classList.toggle(
+              "mostrar"
+            );
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+      <a href="#">YouTube</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Anime</title>
+    <link rel="icon" href="img/icono.jpg" type="image/x-icon" />
+    <!-- Agrega el enlace al icono -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <button id="btn-back">Regresar</button>
+      </a>
+      <h1>Anime Latino</h1>
+    </header>
+
+    <div id="movie-info">
+      <img src="../../images/suzume/suzume.jpg" alt="Portada de la Película" />
+      <p>Nombre: Suzume</p>
+      <p>Tipo: Serie</p>
+      <p>Año: 2024</p>
+      <p>Género: Acción, Fantasía, Escolar</p>
+      <p>Resolución: 1920×1080</p>
+      <p>Duración por Episodio: 30 minutos</p>
+      <p>Audios: Español Latino</p>
+      <p>Peso por Episodio: 100MB - 400MB</p>
+      <p>Calidad: 1080P</p>
+      <p>Servidor: Mediafire</p>
+      <div>
+        <p>
+          Lo que Suzume encuentra en unas ruinas es una única puerta, ya muy
+          desgastada, pero aparentemente protegida de cualquier catástrofe.
+          Atraída por el poder de la puerta, Suzume toca el picaporte… En ese
+          momento, una secuencia de puertas comienzan a abrirse por todo Japón,
+          destruyendo todo lo que se encuentre cerca. Suzume debe cerrar estos
+          portales para evitar aún más desastres.
+        </p>
+      </div>
+
+      <h1>Capturas del anime</h1>
+      <div id="capturas-container">
+        <img src="../img/capturas/suzume/3.jpg" alt="" />
+        <img src="../img/capturas/suzume/2.jpg" alt="" />
+        <img src="../img/capturas/suzume/1.jpg" alt="" />
+        <img src="../img/capturas/suzume/4.jpg" alt="" />
+      </div>
+
+      <!-- Pelicula -->
+      <h2>Descargar Episodios</h2>
+      <div id="marca">
+        <img src="../img/capturas/marcas.jpg" alt="Servicios" />
+      </div>
+      <div id="episodios">
+        <ul>
+          <li class="temporada">
+            <span class="temporada-nombre">Pelicula en Español Latino</span>
+            <ul class="episodios-temporada">
+              <!-- Temporada 2 -->
+              <li><a href="https://cuty.io/Solo1">Pelicula - Suzume</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const temporadas = document.querySelectorAll(".temporada");
+
+        temporadas.forEach((temporada) => {
+          temporada.addEventListener("click", function () {
+            this.querySelector(".episodios-temporada").classList.toggle(
+              "mostrar"
+            );
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <a
+        href="#"
+        >Facebook</a
+      >
+      <a href="#"
+        >TikTok</a
+      >
+      <a href="#">YouTube</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Anime</title>
+    <link rel="icon" href="img/icono.jpg" type="image/x-icon" />
+    <!-- Agrega el enlace al icono -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <button id="btn-back">Regresar</button>
+      </a>
+      <h1>Anime Latino</h1>
+    </header>
+
+    <div id="movie-info">
+      <img
+        src="../../images/Ninjakamui/NinjaKamui.jpg"
+        alt="Portada de la Película"
+      />
+      <p>Nombre: Ninja Kamui</p>
+      <p>Tipo: Serie</p>
+      <p>Año: 2024</p>
+      <p>Género: Acción, Fantasía, Escolar</p>
+      <p>Resolución: 1920×1080</p>
+      <p>Duración por Episodio: 30 minutos</p>
+      <p>Audios: Español Latino</p>
+      <p>Peso por Episodio: 100MB - 400MB</p>
+      <p>Calidad: 1080P</p>
+      <p>Servidor: Mediafire</p>
+      <div>
+        <p>
+          Joe Higan, un antiguo ninja que escapó de su clan y se 
+          escondió en la América rural, sufre una emboscada de asesinos. 
+          Los miembros de la familia de Joe también son asesinados por su
+          traición. Tras sobrevivir, Joe decide regresar a Ninja Kamui para 
+          vengar a su familia y amigos y acabar con el clan que le convirtió
+           en lo que es.
+        </p>
+      </div>
+
+      <h1>Capturas del anime</h1>
+      <div id="capturas-container">
+        <img src="../img/capturas/ninjakamui/1.jpg" alt="" />
+        <img src="../img/capturas/ninjakamui/2.jpg" alt="" />
+        <img src="../img/capturas/ninjakamui/3.jpg" alt="" />
+        <img src="../img/capturas/ninjakamui/4.jpg" alt="" />
+      </div>
+
+      <!-- Lista de Episodios -->
+      <h2>Descargar Episodios</h2>
+      <div id="marca">
+        <img src="../img/capturas/marcas.jpg" alt="Servicios" />
+      </div>
+      <div id="episodios">
+        <ul>
+          <li class="temporada">
+            <span class="temporada-nombre">Temporada 1 en Español Latino</span>
+            <ul class="episodios-temporada">
+              <!-- Temporada 2 -->
+              <li><a href="https://cuty.io/NJN01">Episodio 1</a></li>
+              <li><a href="https://cuty.io/NJN02">Episodio 2</a></li>
+              <li><a href="https://cuty.io/NJN03">Episodio 3</a></li>
+              <li><a href="https://cuty.io/NJN04">Episodio 4</a></li>
+              <li><a href="https://cuty.io/NJN05">Episodio 5</a></li>
+              <li><a href="https://cuty.io/NJN06">Episodio 6</a></li>
+              <li><a href="">Episodio 7 - Proximamente</a></li>
+              <li><a href="">Episodio 8 - Proximamente</a></li>
+              <li><a href="">Episodio 9 - Proximamente</a></li>
+              <li><a href="">Episodio 10 - Proximamente</a></li>
+              <li><a href="">Episodio 11 - Proximamente</a></li>
+              <li><a href="">Episodio 12 - Final - Proximamente</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const temporadas = document.querySelectorAll(".temporada");
+
+        temporadas.forEach((temporada) => {
+          temporada.addEventListener("click", function () {
+            this.querySelector(".episodios-temporada").classList.toggle(
+              "mostrar"
+            );
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <a
+        href="#"
+        >Facebook</a
+      >
+      <a href="#"
+        >TikTok</a
+      >
+      <a href="#">YouTube</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Anime</title>
+    <link rel="icon" href="../../ventanas/img/icono.jpg" type="image/x-icon" />
+    <!-- Agrega el enlace al icono -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="../../mas18/mas18.html">
+        <button id="btn-back">Regresar</button>
+      </a>
+      <h1>Anime Latino</h1>
+    </header>
+
+    <div id="movie-info">
+      <img src="../../images/jujutsukaisen/hentaijjsk.jpg" alt="Portada de la Anime" />
+      <p>Nombre: Jujutsu Kaisen Hentai</p>
+      <p>Solo para +18</p>
+
+      <!-- Lista de Pelicula -->
+      <h2>Descargar Hentai</h2>
+      <div id="marca">
+        <img src="../../ventanas/img/capturas/marcas.jpg" alt="Servicios" />
+      </div>
+      <div id="episodios">
+        <ul>
+          <!-- Temporada 3 -->
+          <li class="temporada">
+            <span class="temporada-nombre">Heitai en Japones</span>
+            <ul class="episodios-temporada">
+              <li>
+                <a href="https://cuty.io/HentaiJJSk"
+                  >Pelicula - Jujutsu Kaisen O
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const temporadas = document.querySelectorAll(".temporada");
+
+        temporadas.forEach((temporada) => {
+          temporada.addEventListener("click", function () {
+            this.querySelector(".episodios-temporada").classList.toggle(
+              "mostrar"
+            );
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+      <a href="#">YouTube</a>
+    </footer>
+  </body>
+</html>

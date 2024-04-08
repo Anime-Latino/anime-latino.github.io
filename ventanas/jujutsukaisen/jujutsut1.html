@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Anime</title>
+    <link rel="icon" href="../img/icono.jpg" type="image/x-icon" />
+    <!-- Agrega el enlace al icono -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <button id="btn-back">Regresar</button>
+      </a>
+      <h1>Anime Latino</h1>
+    </header>
+
+    <div id="movie-info">
+      <img src="../../images/jujutsukaisen/jujutsut1.jpg" alt="Portada de la Anime" />
+      <p>Nombre: Jujutsu Kaisen temporada 1</p>
+      <p>Precuela: Jujutsu Kaisen 0 Movie</p>
+      <p>Tipo: Serie</p>
+      <p>Episodios: 24</p>
+      <p>Estudio: Mappa</p>
+      <p>Año: 2020 – 2021</p>
+      <p>Género: Acción, Fantasía, Escolar</p>
+      <p>Resolución: 1920×1080</p>
+      <p>Duración por Episodio: 23 minutos</p>
+      <p>Audios: Español Latino</p>
+      <p>Peso por Episodio: 100MB – 200MB</p>
+      <p>Calidad: 360p - 720p</p>
+      <p>Servidor: Drive</p>
+      <div>
+        <p>
+          Descripción: un estudiante de instituto, se dedica a realizar
+          actividades paranormales con el Club de Ocultismo y pasa sus días en
+          el club o en el hospital, donde visita a su abuelo postrado en cama.
+          Sin embargo, este tranquilo estilo de vida pronto da un giro hacia lo
+          extraño cuando, sin saberlo, encuentra un objeto maldito.
+          Desencadenando una cadena de sucesos sobrenaturales, Yuuji se
+          encuentra de repente inmerso en el mundo de las Maldiciones
+        </p>
+      </div>
+
+      <h1>Capturas del anime</h1>
+      <div id="capturas-container">
+        <img src="../img/capturas/jujutsukaisen/temp1/1.jpg" alt="" />
+        <img src="../img/capturas/jujutsukaisen/temp1/2.jpg" alt="" />
+        <img src="../img/capturas/jujutsukaisen/temp1/3.jpg" alt="" />
+        <img src="../img/capturas/jujutsukaisen/temp1/4.jpg" alt="" />
+      </div>
+
+      <!-- Lista de Pelicula -->
+      <h2>Descargar Pelicula</h2>
+      <div id="marca">
+        <img src="../img/capturas/marcas.jpg" alt="" />
+      </div>
+      <div id="episodios">
+        <ul>
+          <li class="temporada">
+            <span class="temporada-nombre">Temporada 1 en Español Latino</span>
+            <ul class="episodios-temporada">
+              <!-- Temporada 1 -->
+              <li><a href="https://cuty.io/JJKT101">Episodio 1</a></li>
+              <li><a href="https://cuty.io/JJKT102">Episodio 2</a></li>
+              <li><a href="https://cuty.io/JJKT103">Episodio 3</a></li>
+              <li><a href="https://cuty.io/JJKT104">Episodio 4</a></li>
+              <li><a href="https://cuty.io/JJKT105">Episodio 5</a></li>
+              <li><a href="https://cuty.io/JJKT106">Episodio 6</a></li>
+              <li><a href="https://cuty.io/JJKT107">Episodio 7</a></li>
+              <li><a href="https://cuty.io/JJKT108">Episodio 8</a></li>
+              <li><a href="https://cuty.io/JJKT109">Episodio 9</a></li>
+              <li><a href="https://cuty.io/JJKT110">Episodio 10</a></li>
+              <li><a href="https://cuty.io/JJKT111">Episodio 11</a></li>
+              <li><a href="https://cuty.io/JJKT112">Episodio 12</a></li>
+              <li><a href="https://cuty.io/JJKT113">Episodio 13</a></li>
+              <li><a href="https://cuty.io/JJKT114">Episodio 14</a></li>
+              <li><a href="https://cuty.io/JJKT115">Episodio 15</a></li>
+              <li><a href="https://cuty.io/JJKT116">Episodio 16</a></li>
+              <li><a href="https://cuty.io/JJKT117">Episodio 17</a></li>
+              <li><a href="https://cuty.io/JJKT118">Episodio 18</a></li>
+              <li><a href="https://cuty.io/JJKT119">Episodio 19</a></li>
+              <li><a href="https://cuty.io/JJKT120">Episodio 20</a></li>
+              <li><a href="https://cuty.io/JJKT121">Episodio 21</a></li>
+              <li><a href="https://cuty.io/JJKT122">Episodio 22</a></li>
+              <li><a href="https://cuty.io/JJKT123">Episodio 23</a></li>
+              <li><a href="https://cuty.io/JJKT124">Episodio 24 - Final</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const temporadas = document.querySelectorAll(".temporada");
+
+        temporadas.forEach((temporada) => {
+          temporada.addEventListener("click", function () {
+            this.querySelector(".episodios-temporada").classList.toggle(
+              "mostrar"
+            );
+          });
+        });
+      });
+    </script>
+
+    <footer>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+      <a href="#">YouTube</a>
+    </footer>
+  </body>
+</html>
