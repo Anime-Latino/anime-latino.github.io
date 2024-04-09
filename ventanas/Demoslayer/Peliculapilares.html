@@ -19,6 +19,7 @@
 
   <div id="movie-info">
     <!-- Contenido del anime... -->
+    <!-- Contenido del anime... -->
      <img src="../../images/demonslayer/PEpilares.jpg" alt="Portada de la Anime" />
       <p>Nombre: Kimetsu No Yaiba - Rumbo al entrenamiento de los pilares</p>
       <p>Precuela: Kimetsu no yaiba Temporada 3</p>
@@ -55,10 +56,9 @@
       <img src="../img/capturas/marcas.jpg" alt="" />
     </div>
     <div id="episodios">
-      <button id="btn-desplegar-episodios">Desplegar Episodios</button> <!-- Identificador agregado -->
       <ul>
         <li class="temporada">
-          <span class="temporada-nombre">Pelicula Español Latino</span>
+          <span class="temporada-nombre" id="mostrar-anuncio">Pelicula Español Latino</span> <!-- Identificador agregado -->
           <ul class="episodios-temporada">
             <!-- Temporada 2 -->
             <li><a href="https://cuty.io/KMNPelicula">Pelicula - Demon Slayer</a></li>
@@ -68,18 +68,18 @@
     </div>
   </div>
 
+  <!-- Carga del anuncio intersticial -->
+  <script src="https://jsc.adskeeper.com/site/952934.js" async></script>
+  <div data-type="_mgwidget" data-widget-id="1608140"></div>
+  <script>
+    (function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
+  </script>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const temporadas = document.querySelectorAll(".temporada");
-      const btnDesplegarEpisodios = document.getElementById("btn-desplegar-episodios");
+      const btnMostrarAnuncio = document.getElementById("mostrar-anuncio");
 
-      temporadas.forEach((temporada) => {
-        temporada.addEventListener("click", function () {
-          this.querySelector(".episodios-temporada").classList.toggle("mostrar");
-        });
-      });
-
-      btnDesplegarEpisodios.addEventListener("click", function() {
+      btnMostrarAnuncio.addEventListener("click", function() {
         // Cargar y mostrar el anuncio intersticial
         const script = document.createElement('script');
         script.src = "https://jsc.adskeeper.com/site/952934.js";
