@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de Anime</title>
-    <link rel="icon" href="../img/icono.jpg" type="image/x-icon" />
-    <!-- Agrega el enlace al icono -->
-    <link rel="stylesheet" href="../css/styles.css" />
-    <style></style>
-  </head>
-  <body>
-    <header>
-      <a href="../../index.html">
-        <button id="btn-back">Regresar</button>
-      </a>
-      <h1>Anime Latino</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Anime</title>
+  <link rel="icon" href="../img/icono.jpg" type="image/x-icon" />
+  <!-- Agrega el enlace al icono -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style></style>
+</head>
+<body>
+  <header>
+    <a href="../../index.html">
+      <button id="btn-back">Regresar</button>
+    </a>
+    <h1>Anime Latino</h1>
+  </header>
 
-    <div id="movie-info">
-      <img src="../../images/demonslayer/PEpilares.jpg" alt="Portada de la Anime" />
+  <div id="movie-info">
+    <!-- Contenido del anime... -->
+     <img src="../../images/demonslayer/PEpilares.jpg" alt="Portada de la Anime" />
       <p>Nombre: Kimetsu No Yaiba - Rumbo al entrenamiento de los pilares</p>
       <p>Precuela: Kimetsu no yaiba Temporada 3</p>
       <p>Tipo: Pelicula</p>
@@ -48,42 +49,50 @@
         <img src="../img/capturas/demonslayer/k9.jpg" alt="" />
       </div>
 
-      <!-- Lista de Pelicula -->
-      <h2>Descargar Pelicula</h2>
-      <div id="marca">
-        <img src="../img/capturas/marcas.jpg" alt="" />
-      </div>
-      <div id="episodios">
-        <ul>
-          <li class="temporada">
-            <span class="temporada-nombre">Pelicula Español Latino</span>
-            <ul class="episodios-temporada">
-              <!-- Temporada 2 -->
-              <li><a href="https://cuty.io/KMNPelicula">Pelicula - Demon Slayer</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <!-- Lista de Pelicula -->
+    <h2>Descargar Pelicula</h2>
+    <div id="marca">
+      <img src="../img/capturas/marcas.jpg" alt="" />
     </div>
+    <div id="episodios">
+      <button id="btn-desplegar-episodios">Desplegar Episodios</button> <!-- Identificador agregado -->
+      <ul>
+        <li class="temporada">
+          <span class="temporada-nombre">Pelicula Español Latino</span>
+          <ul class="episodios-temporada">
+            <!-- Temporada 2 -->
+            <li><a href="https://cuty.io/KMNPelicula">Pelicula - Demon Slayer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const temporadas = document.querySelectorAll(".temporada");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const temporadas = document.querySelectorAll(".temporada");
+      const btnDesplegarEpisodios = document.getElementById("btn-desplegar-episodios");
 
-        temporadas.forEach((temporada) => {
-          temporada.addEventListener("click", function () {
-            this.querySelector(".episodios-temporada").classList.toggle(
-              "mostrar"
-            );
-          });
+      temporadas.forEach((temporada) => {
+        temporada.addEventListener("click", function () {
+          this.querySelector(".episodios-temporada").classList.toggle("mostrar");
         });
       });
-    </script>
 
-    <footer>
-      <a href="https://www.facebook.com/profile.php?id=61556606437618&mibextid=JRoKGi">Facebook</a>
-      <a href="https://www.tiktok.com/@_anime_latin?_t=8l4OXuK81qf&_r=1">TikTok</a>
-      <a href="#">YouTube</a>
-    </footer>
-  </body>
+      btnDesplegarEpisodios.addEventListener("click", function() {
+        // Cargar y mostrar el anuncio intersticial
+        const script = document.createElement('script');
+        script.src = "https://jsc.adskeeper.com/site/952934.js";
+        script.async = true;
+        document.body.appendChild(script);
+      });
+    });
+  </script>
+
+  <footer>
+    <a href="https://www.facebook.com/profile.php?id=61556606437618&mibextid=JRoKGi">Facebook</a>
+    <a href="https://www.tiktok.com/@_anime_latin?_t=8l4OXuK81qf&_r=1">TikTok</a>
+    <a href="#">YouTube</a>
+  </footer>
+</body>
 </html>
