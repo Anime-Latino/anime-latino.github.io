@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página de Anime</title>
-  <link rel="icon" href="../img/icono.jpg" type="image/x-icon" />
-  <!-- Agrega el enlace al icono -->
-  <link rel="stylesheet" href="../css/styles.css" />
-  <style></style>
-</head>
-<body>
-  <header>
-    <button id="btn-back">Regresar</button>
-    <h1>Anime Latino</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Anime</title>
+    <link rel="icon" href="../img/icono.jpg" type="image/x-icon" />
+    <!-- Agrega el enlace al icono -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://jsc.adskeeper.com/site/952934.js" async></script>
 
-  <div id="movie-info">
-    <!-- Contenido del anime... -->
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html">
+        <button id="btn-back">Regresar</button>
+      </a>
+      <h1>Anime Latino</h1>
+    </header>
 
-    <!-- Lista de Pelicula -->
-    <h2>Descargar Pelicula</h2>
-    <div id="marca">
-      <img src="../img/capturas/marcas.jpg" alt="" />
+    <div id="movie-info">
+      <img src="../../images/demonslayer/PEpilares.jpg" alt="Portada de la Anime" />
+      <p>Nombre: Kimetsu No Yaiba - Rumbo al entrenamiento de los pilares</p>
+      <p>Precuela: Kimetsu no yaiba Temporada 3</p>
+      <p>Tipo: Pelicula</p>
+      <p>Año: 2024</p>
+      <p>Género: Acción, Fantasía, Escolar</p>
+      <p>Resolución: 1920×1080</p>
+      <p>Duración: 97 minutos</p>
+      <p>Audios: Español Latino</p>
+      <p>Peso por Episodio: 1.2GB</p>
+      <p>Calidad: 1080P</p>
+      <p>Servidor: Drive</p>
+      <div>
+        <p>Solo está disponible la versión CAMRIP por el momento. 
+          Se actualizará cuando salga una mejor versión.
+          Tanjiro se somete a un riguroso entrenamiento con 
+          el Hashira de Piedra, Himejima, en su búsqueda por 
+          convertirse en un Hashira. Mientras tanto, Muzan sigue
+           buscando a Nezuko y Ubuyashiki.</p>
+      </div>
+      
+      <!-- place in the body -->
+<div data-type="_mgwidget" data-widget-id="1608180">
+</div>
+<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
+</script>
+      
+      <h1>Capturas del anime</h1>
+      <div id="capturas-container">
+        <img src="../img/capturas/demonslayer/k10.jpg" alt="" />
+        <img src="../img/capturas/demonslayer/k11.jpg" alt="" />
+        <img src="../img/capturas/demonslayer/k12.jpg" alt="" />
+        <img src="../img/capturas/demonslayer/k9.jpg" alt="" />
+      </div>
+
+      <!-- place in the body -->
+<div data-type="_mgwidget" data-widget-id="1608181">
+</div>
+<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
+</script>
+
+
+      
+      <!-- Lista de Pelicula -->
+      <h2>Descargar Pelicula</h2>
+      <div id="marca">
+        <img src="../img/capturas/marcas.jpg" alt="" />
+      </div>
+      <div id="episodios">
+        <ul>
+          <li class="temporada">
+            <span class="temporada-nombre">Pelicula Español Latino</span>
+            <ul class="episodios-temporada">
+              <!-- Temporada 2 -->
+              <li><a href="https://drive.google.com/file/d/1VKlpIcBrlxQGUh5l00Rv3iBOxQ68y8Y4/view?pli=1">Pelicula - Demon Slayer</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div id="episodios">
-      <ul>
-        <li class="temporada" id="mostrar-anuncio">
-          <span class="temporada-nombre">Pelicula Español Latino</span> <!-- Identificador agregado -->
-          <ul class="episodios-temporada">
-            <!-- Temporada 2 -->
-            <li><a href="https://cuty.io/KMNPelicula">Pelicula - Demon Slayer</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const temporadas = document.querySelectorAll(".temporada");
+
+        temporadas.forEach((temporada) => {
+          temporada.addEventListener("click", function () {
+            this.querySelector(".episodios-temporada").classList.toggle(
+              "mostrar"
+            );
+          });
+        });
+      });
+    </script>
+  <!-- place in the body -->
+  <div data-type="_mgwidget" data-widget-id="1608179">
   </div>
-
-  <!-- Carga del script de AdsKeeper -->
-  <script src="https://jsc.adskeeper.com/site/952934.js" async></script>
-  <div data-type="_mgwidget" data-widget-id="1608140"></div>
-  <script>
-    (function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const btnRegresar = document.getElementById("btn-back");
-      const elementoActivador = document.getElementById("mostrar-anuncio");
-
-      function mostrarAnuncio() {
-        _mgq.push(["_mgc.load"]);
-      }
-
-      btnRegresar.addEventListener("click", mostrarAnuncio);
-      elementoActivador.addEventListener("click", mostrarAnuncio);
-    });
+  <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
   </script>
 
-  <footer>
-    <a href="https://www.facebook.com/profile.php?id=61556606437618&mibextid=JRoKGi">Facebook</a>
-    <a href="https://www.tiktok.com/@_anime_latin?_t=8l4OXuK81qf&_r=1">TikTok</a>
-    <a href="#">YouTube</a>
-  </footer>
-</body>
+    <footer>
+      <a href="https://www.facebook.com/profile.php?id=61556606437618&mibextid=JRoKGi">Facebook</a>
+      <a href="https://www.tiktok.com/@_anime_latin?_t=8l4OXuK81qf&_r=1">TikTok</a>
+      <a href="#">YouTube</a>
+    </footer>
+  </body>
 </html>
