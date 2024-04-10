@@ -492,4 +492,25 @@ hr {
   }
 }
 
+/* Estilos para el bloque de anuncio */
+.Anuncio {
+  position: relative; /* Establece una posición relativa para que los pseudo-elementos sean relativos a este */
+  text-align: center; /* Texto centrado */
+  font-size: 1.2em; /* Tamaño de letra un poco más grande */
+  margin-top: 20px; /* Añade un espacio en la parte superior del bloque */
+}
 
+.Anuncio cite {
+  position: relative; /* Ajusta la posición relativa para el pseudo-elemento */
+}
+
+/* Estilo para la línea roja */
+.Anuncio::before {
+  content: ''; /* Agrega contenido vacío */
+  position: absolute; /* Establece una posición absoluta */
+  bottom: -6px; /* Ajusta la posición para que la línea esté debajo del texto */
+  left: 0; /* Establece la posición izquierda para que empiece desde el borde izquierdo */
+  width: 100%; /* Ajusta el ancho para que la línea se extienda a lo largo del texto */
+  height: 4px; /* Altura de la línea */
+  background-color: red; /* Color de la línea */
+}
