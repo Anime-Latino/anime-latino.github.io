@@ -185,3 +185,15 @@ footer a {
   margin-left: -4px; /* Margen izquierdo negativo */
   margin-right: -px; /* Margen derecho negativo */
 }
+
+/* Estilos base para el bloque de anuncio */
+#Anuncio cite, cite {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Aplica negrita solo al primer elemento <cite> con id "2" */
+#Anuncio cite, cite {
+  font-weight: bold;
+}
